@@ -1,0 +1,48 @@
+F:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI SortifyBot.csproj.AssemblyReference.cache
+F:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI_SortifyBot.Properties.Resources.resources
+F:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI SortifyBot.csproj.GenerateResource.cache
+F:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI SortifyBot.csproj.CoreCompileInputs.cache
+F:\Proiecte VS C#\GUI SortifyBot\bin\Debug\GUI SortifyBot.exe.config
+F:\Proiecte VS C#\GUI SortifyBot\bin\Debug\GUI SortifyBot.exe
+F:\Proiecte VS C#\GUI SortifyBot\bin\Debug\GUI SortifyBot.pdb
+F:\Proiecte VS C#\GUI SortifyBot\bin\Debug\FontAwesome.Sharp.dll
+F:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI SortifyBot.csproj.CopyComplete
+F:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI SortifyBot.exe
+F:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI SortifyBot.pdb
+F:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI_SortifyBot.Form1.resources
+F:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI_SortifyBot.FormSettings.resources
+F:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI_SortifyBot.FormDashboard.resources
+F:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI_SortifyBot.FormController.resources
+D:\Proiecte VS C#\GUI SortifyBot\bin\Debug\GUI SortifyBot.exe.config
+D:\Proiecte VS C#\GUI SortifyBot\bin\Debug\GUI SortifyBot.exe
+D:\Proiecte VS C#\GUI SortifyBot\bin\Debug\GUI SortifyBot.pdb
+D:\Proiecte VS C#\GUI SortifyBot\bin\Debug\FontAwesome.Sharp.dll
+D:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI SortifyBot.csproj.AssemblyReference.cache
+D:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI_SortifyBot.FormSettings.resources
+D:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI_SortifyBot.FormDashboard.resources
+D:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI_SortifyBot.FormController.resources
+D:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI_SortifyBot.Form1.resources
+D:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI_SortifyBot.Properties.Resources.resources
+D:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI SortifyBot.csproj.GenerateResource.cache
+D:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI SortifyBot.csproj.CoreCompileInputs.cache
+D:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI SortifyBot.csproj.CopyComplete
+D:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI SortifyBot.exe
+D:\Proiecte VS C#\GUI SortifyBot\obj\Debug\GUI SortifyBot.pdb
+F:\Proiecte VS C#\GUI SortifyBot\bin\Debug\MACTrackBarLib.dll
+D:\Proiecte VS C#\GUI SortifyBot\bin\Debug\MACTrackBarLib.dll
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\bin\Debug\GUI SortifyBot.exe.config
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\bin\Debug\GUI SortifyBot.exe
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\bin\Debug\GUI SortifyBot.pdb
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\bin\Debug\FontAwesome.Sharp.dll
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\bin\Debug\MACTrackBarLib.dll
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\GUI SortifyBot.csproj.AssemblyReference.cache
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\GUI_SortifyBot.FormController.resources
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\GUI_SortifyBot.FormSettings.resources
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\GUI_SortifyBot.FormDashboard.resources
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\GUI_SortifyBot.Form1.resources
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\GUI_SortifyBot.Properties.Resources.resources
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\GUI SortifyBot.csproj.GenerateResource.cache
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\GUI SortifyBot.csproj.CoreCompileInputs.cache
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\GUI SortifyBot.csproj.CopyComplete
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\GUI SortifyBot.exe
+C:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\GUI SortifyBot.pdb
