@@ -1,13 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Forms",
-    "\\obj\\Debug",
-    "\\obj\\Debug\\Forms",
-    "\\obj\\Debug\\TempPE",
-    "\\packages",
-    "\\Properties"
+    ""
   ],
-  "SelectedNode": "\\FormController.cs",
   "PreviewInSolutionExplorer": false
 }

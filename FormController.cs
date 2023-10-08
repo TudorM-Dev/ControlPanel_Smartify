@@ -19,10 +19,10 @@ using System.Windows.Controls;
 
 namespace GUI_SortifyBot
 {
-    //test
+    //test1
     public partial class FormController : Form
     {
-        //Forms
+        //Forms 123
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
