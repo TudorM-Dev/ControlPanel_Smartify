@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Forms",
+    "\\obj\\Debug",
+    "\\obj\\Debug\\Forms",
+    "\\obj\\Debug\\TempPE",
+    "\\packages",
+    "\\Properties"
   ],
-  "SelectedNode": "\\GUI SortifyBot.sln",
+  "SelectedNode": "\\FormController.cs",
   "PreviewInSolutionExplorer": false
 }
