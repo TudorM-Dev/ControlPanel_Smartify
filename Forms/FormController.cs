@@ -18,7 +18,9 @@ namespace SortifyBot_UI.Forms
 {
     public partial class FormController : Form
     {
-        
+
+        String jointSerialOutput;
+
         public static FormController instance;
         
         public FormController()
@@ -47,6 +49,8 @@ namespace SortifyBot_UI.Forms
                 slider.Value = 0;
             }
 
+            Console.WriteLine(getGlobalValue());
+
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
@@ -69,83 +73,17 @@ namespace SortifyBot_UI.Forms
                 SetParent(proc.MainWindowHandle, this.Handle);
         }
 
-        private void output()
+        private void updateGlobalValue()
         {
-            Console.WriteLine(slider1.Value + " " + slider2.Value + " " + slider3.Value + " " + slider4.Value + " " + slider5.Value + " " + slider6.Value);
+            jointSerialOutput = slider1.Value + " " + slider2.Value + " " + slider3.Value + " " + slider4.Value + " " + slider5.Value + " " + slider6.Value;
         }
 
-
-        private void slider1_ValueChanged(object sender, decimal value)
+        private string getGlobalValue()
         {
-            TextBoxValue(slider1, textBox1);
-            
-        }
-        private void slider2_ValueChanged(object sender, decimal value)
-        {
-            TextBoxValue(slider2, textBox2);
-            
-        }
-        private void slider3_ValueChanged(object sender, decimal value)
-        {
-            TextBoxValue(slider3, textBox3);
-            
-        }
-        private void slider4_ValueChanged(object sender, decimal value)
-        {
-            TextBoxValue(slider4, textBox4);
-            
-        }
-        private void slider5_ValueChanged(object sender, decimal value)
-        {
-            TextBoxValue(slider5, textBox5);
-            
-        }
-        private void slider6_ValueChanged(object sender, decimal value)
-        {
-            TextBoxValue(slider6, textBox6);
-            
+            updateGlobalValue();
+            return jointSerialOutput;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            Slider(slider1, textBox1);
-            output();
-        }
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            Slider(slider2, textBox2);
-            output();
-        }
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-            Slider(slider3, textBox3);
-            output();
-        }
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-            Slider(slider4, textBox4);
-            output();
-        }
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-            Slider(slider5, textBox5);
-            output();
-        }
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-            Slider(slider6, textBox6);
-            output();
-        }
-
-        private void FormController_Load(object sender, EventArgs e)
-        {
-            textBox1.Text = "0";
-            textBox2.Text = "0";
-            textBox3.Text = "0";
-            textBox4.Text = "0";
-            textBox5.Text = "0";
-            textBox6.Text = "0";
-        }
 
         private void textBoxPort_TextChanged(object sender, EventArgs e)
         {
@@ -189,5 +127,76 @@ namespace SortifyBot_UI.Forms
             text1.WriteLine(textBox1.Text + " " + textBox2.Text + " " + textBox3.Text + " " + textBox4.Text + " " + textBox5.Text + " " + textBox6.Text + " ");
             text1.Close();
         }
+
+
+        #region SliderRegion
+
+        private void slider1_ValueChanged(object sender, decimal value)
+        {
+            TextBoxValue(slider1, textBox1);
+
+        }
+        private void slider2_ValueChanged(object sender, decimal value)
+        {
+            TextBoxValue(slider2, textBox2);
+
+        }
+        private void slider3_ValueChanged(object sender, decimal value)
+        {
+            TextBoxValue(slider3, textBox3);
+
+        }
+        private void slider4_ValueChanged(object sender, decimal value)
+        {
+            TextBoxValue(slider4, textBox4);
+
+        }
+        private void slider5_ValueChanged(object sender, decimal value)
+        {
+            TextBoxValue(slider5, textBox5);
+
+        }
+        private void slider6_ValueChanged(object sender, decimal value)
+        {
+            TextBoxValue(slider6, textBox6);
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Slider(slider1, textBox1);
+        }
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            Slider(slider2, textBox2);
+        }
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            Slider(slider3, textBox3);
+        }
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            Slider(slider4, textBox4);
+        }
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            Slider(slider5, textBox5);
+        }
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            Slider(slider6, textBox6);
+        }
+
+        private void FormController_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = "0";
+            textBox2.Text = "0";
+            textBox3.Text = "0";
+            textBox4.Text = "0";
+            textBox5.Text = "0";
+            textBox6.Text = "0";
+        }
+
+        #endregion
     }
 }
