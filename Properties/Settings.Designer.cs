@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GUI_SortifyBot.Properties
+namespace SortifyBot_UI.Properties
 {
 
 

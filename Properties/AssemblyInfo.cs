@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GUI SortifyBot")]
+[assembly: AssemblyTitle("SortifyBot UI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("GUI SortifyBot")]
+[assembly: AssemblyProduct("SortifyBot UI")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1c690e47-003a-412f-ab43-9924cdd44ef3")]
+[assembly: Guid("2e7c7d36-8d4e-4e6b-93f4-4d00ea8fa6ad")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -16,21 +16,23 @@ using System.Diagnostics;
 using System.Threading;
 using System.IO;
 using System.Windows.Controls;
+using XComponent.SliderBar;
 
 namespace GUI_SortifyBot
 {
     public partial class FormController : Form
     {
+
         //Forms
         private IconButton currentBtn;
-        private Panel leftBorderBtn;
+        private System.Windows.Forms.Panel leftBorderBtn;
         private Form currentChildForm;
 
         //Constructor
         public FormController()
         {
             InitializeComponent();
-            leftBorderBtn = new Panel();
+            leftBorderBtn = new System.Windows.Forms.Panel();
             leftBorderBtn.Size = new Size(7, 60);
             //Form
             this.Text = string.Empty;
@@ -38,6 +40,8 @@ namespace GUI_SortifyBot
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
+
+
 
         //Structs
         private struct RGBColors
@@ -134,176 +138,83 @@ namespace GUI_SortifyBot
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        private void Slider(MACTrackBar slider, System.Windows.Forms.TextBox textBox)
+        {
+            textBox.Text = slider.Value.ToString();
+
+            bool result = textBox.Text.Any(x => char.IsNumber(x));
+            if (result == true && textBox.Text != string.Empty)
+            {
+                string onlyNumbers = Regex.Replace(textBox.Text, "[^. 0-9.-]", "");
+                slider.Value = Int32.Parse(onlyNumbers);
+                textBox.Text = onlyNumbers;
+            }
+            else if (textBox.Text == string.Empty)
+            {
+                slider.Value = 0;
+            }
+
+            Console.Write(textBox1.Text + " " + textBox2.Text + " " + textBox3.Text + " " + textBox4.Text + " " + textBox5.Text + " " + textBox6.Text);
+        }
+        
         private void slider1_ValueChanged(object sender, decimal value)
         {
-            textBox1.Text = slider1.Value.ToString();
+            Slider(slider1, textBox1);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            bool result = textBox1.Text.Any(x => char.IsNumber(x));
-            if (result == true && textBox1.Text != string.Empty)
-            {
-                string onlyNumbers1 = Regex.Replace(textBox1.Text, "[^. 0-9.-]", "");
-                slider1.Value = Int32.Parse(onlyNumbers1);
-                textBox1.Text = onlyNumbers1;
-            }
-            else if (textBox1.Text == string.Empty) { slider1.Value = 0; }
-
-            string filePath = Path.Combine(Environment.CurrentDirectory, "F:\\Proiecte VS C#\\Data.txt");
-
-                Console.WriteLine("Value from TextBox1: " + textBox1.Text);
-                Console.WriteLine("Value from TextBox2: " + textBox2.Text);
-                Console.WriteLine("Value from TextBox3: " + textBox3.Text);
-                Console.WriteLine("Value from TextBox4: " + textBox4.Text);
-                Console.WriteLine("Value from TextBox5: " + textBox5.Text);
-                Console.WriteLine("Value from TextBox6: " + textBox6.Text);
-            
+            Slider(slider1, textBox1);
         }
 
         private void slider2_ValueChanged(object sender, decimal value)
         {
-            textBox2.Text = slider2.Value.ToString();
+            Slider(slider2, textBox2);
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            bool result = textBox2.Text.Any(x => char.IsNumber(x));
-            if (result == true && textBox2.Text != string.Empty)
-            {
-                string onlyNumbers2 = Regex.Replace(textBox2.Text, "[^. 0-9.-]", "");
-                slider2.Value = Int32.Parse(onlyNumbers2);
-                textBox2.Text = onlyNumbers2;
-            }
-            else if (textBox2.Text == string.Empty) { slider2.Value = 0; }
-
-            string filePath = Path.Combine(Environment.CurrentDirectory, "F:\\Proiecte VS C#\\Data.txt");
-
-            using (StreamWriter writer = new StreamWriter(filePath))
-            {
-                writer.WriteLine("Value from TextBox1: " + textBox1.Text);
-                writer.WriteLine("Value from TextBox2: " + textBox2.Text);
-                writer.WriteLine("Value from TextBox3: " + textBox3.Text);
-                writer.WriteLine("Value from TextBox4: " + textBox4.Text);
-                writer.WriteLine("Value from TextBox5: " + textBox5.Text);
-                writer.WriteLine("Value from TextBox6: " + textBox6.Text);
-            }
+            Slider(slider2, textBox2);
         }
 
         private void slider3_ValueChanged(object sender, decimal value)
         {
-            textBox3.Text = slider3.Value.ToString();
+            Slider(slider3, textBox3);
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            bool result = textBox3.Text.Any(x => char.IsNumber(x));
-            if (result == true && textBox3.Text != string.Empty)
-            {
-                string onlyNumbers3 = Regex.Replace(textBox3.Text, "[^. 0-9.-]", "");
-                slider3.Value = Int32.Parse(onlyNumbers3);
-                textBox3.Text = onlyNumbers3;  
-            }
-            else if (textBox3.Text == string.Empty) { slider3.Value = 0; }
-
-            string filePath = Path.Combine(Environment.CurrentDirectory, "F:\\Proiecte VS C#\\Data.txt");
-
-            using (StreamWriter writer = new StreamWriter(filePath))
-            {
-                writer.WriteLine("Value from TextBox1: " + textBox1.Text);
-                writer.WriteLine("Value from TextBox2: " + textBox2.Text);
-                writer.WriteLine("Value from TextBox3: " + textBox3.Text);
-                writer.WriteLine("Value from TextBox4: " + textBox4.Text);
-                writer.WriteLine("Value from TextBox5: " + textBox5.Text);
-                writer.WriteLine("Value from TextBox6: " + textBox6.Text);
-            }
+            Slider(slider3, textBox3);
         }
 
         private void slider4_ValueChanged(object sender, decimal value)
         {
-            textBox4.Text = slider4.Value.ToString();
+            Slider(slider4, textBox4);
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            bool result = textBox4.Text.Any(x => char.IsNumber(x));
-            if (result == true && textBox4.Text != string.Empty)
-            {
-                string onlyNumbers4 = Regex.Replace(textBox4.Text, "[^. 0-9.-]", "");
-                slider4.Value = Int32.Parse(onlyNumbers4);
-                textBox4.Text = onlyNumbers4;
-            }
-            else if (textBox4.Text == string.Empty) { slider4.Value = 0; }
-
-            string filePath = Path.Combine(Environment.CurrentDirectory, "F:\\Proiecte VS C#\\Data.txt");
-
-            using (StreamWriter writer = new StreamWriter(filePath))
-            {
-                writer.WriteLine("Value from TextBox1: " + textBox1.Text);
-                writer.WriteLine("Value from TextBox2: " + textBox2.Text);
-                writer.WriteLine("Value from TextBox3: " + textBox3.Text);
-                writer.WriteLine("Value from TextBox4: " + textBox4.Text);
-                writer.WriteLine("Value from TextBox5: " + textBox5.Text);
-                writer.WriteLine("Value from TextBox6: " + textBox6.Text);
-            }
+            Slider(slider4, textBox4);
         }
 
         private void slider5_ValueChanged(object sender, decimal value)
         {
-            textBox5.Text = slider5.Value.ToString();
+            Slider(slider5, textBox5);
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            bool result = textBox5.Text.Any(x => char.IsNumber(x));
-            if (result == true && textBox5.Text != string.Empty)
-            {
-                string onlyNumbers5 = Regex.Replace(textBox5.Text, "[^. 0-9.-]", "");
-                slider5.Value = Int32.Parse(onlyNumbers5);
-                textBox5.Text = onlyNumbers5;
-            }
-            else if (textBox5.Text == string.Empty) { slider5.Value = 0; }
-
-            string filePath = Path.Combine(Environment.CurrentDirectory, "F:\\Proiecte VS C#\\Data.txt");
-
-            using (StreamWriter writer = new StreamWriter(filePath))
-            {
-                writer.WriteLine("Value from TextBox1: " + textBox1.Text);
-                writer.WriteLine("Value from TextBox2: " + textBox2.Text);
-                writer.WriteLine("Value from TextBox3: " + textBox3.Text);
-                writer.WriteLine("Value from TextBox4: " + textBox4.Text);
-                writer.WriteLine("Value from TextBox5: " + textBox5.Text);
-                writer.WriteLine("Value from TextBox6: " + textBox6.Text);
-            }
+            Slider(slider5, textBox5);
         }
 
         private void slider6_ValueChanged(object sender, decimal value)
         {
-            textBox6.Text = slider6.Value.ToString();
+            Slider(slider6, textBox6);
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            bool result = textBox6.Text.Any(x => char.IsNumber(x));
-            if (result == true && textBox6.Text != string.Empty)
-            {
-                string onlyNumbers6 = Regex.Replace(textBox6.Text, "[^. 0-9.-]", "");
-                slider6.Value = Int32.Parse(onlyNumbers6);
-                textBox6.Text = onlyNumbers6;
-            }
-            else if (textBox6.Text == string.Empty) { slider6.Value = 0; }
-
-            string filePath = Path.Combine(Environment.CurrentDirectory, "F:\\Proiecte VS C#\\Data.txt");
-
-            using (StreamWriter writer = new StreamWriter(filePath))
-            {
-                writer.WriteLine("Value from TextBox1: " + textBox1.Text);
-                writer.WriteLine("Value from TextBox2: " + textBox2.Text);
-                writer.WriteLine("Value from TextBox3: " + textBox3.Text);
-                writer.WriteLine("Value from TextBox4: " + textBox4.Text);
-                writer.WriteLine("Value from TextBox5: " + textBox5.Text);
-                writer.WriteLine("Value from TextBox6: " + textBox6.Text);
-            }
+            Slider(slider6, textBox6);
         }
 
         private void textBoxPort_TextChanged(object sender, EventArgs e)
@@ -332,10 +243,34 @@ namespace GUI_SortifyBot
                 SetParent(proc.MainWindowHandle, this.Handle);
             }    
         }
-        void sliderKkt(Slider slider, System.Windows.Controls.TextBox textBox)
-        {
 
+        private Rectangle buttonOriginalRectangle;
+        private Rectangle originalFormSize;
+
+        private void FormController_Load(object sender, EventArgs e)
+        {
+            originalFormSize = new Rectangle(this.Location.X, this.Location.Y, this.Size.Width, this.Size.Height);
+            buttonOriginalRectangle = new Rectangle(button1.Location.X, button1.Location.Y, button1.Width, button1.Height);
+        }
+
+        private void resizeControl(Rectangle r, FontAwesome.Sharp.IconButton c)
+        {
+            float xRatio = (float)(this.Width) / (float)(originalFormSize.Width);
+            float yRatio = (float)(this.Height) / (float)(originalFormSize.Height);
+
+            int newX = (int)(r.Location.X * xRatio);
+            int newY = (int)(r.Location.Y * yRatio);
+
+            int newWidth = (int)(r.Width * xRatio);
+            int newHeight = (int)(r.Height * yRatio);
+
+            c.Location = new Point(newX, newY);
+            c.Size = new Size(newWidth, newHeight);
+        }
+
+        private void FormController_Resize(object sender, EventArgs e)
+        {
+            resizeControl(buttonOriginalRectangle, iconButtonOpen);
         }
     }
-
 }

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortifyBot UI", "SortifyBot UI.csproj", "{2E7C7D36-8D4E-4E6B-93F4-4D00EA8FA6AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E7C7D36-8D4E-4E6B-93F4-4D00EA8FA6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E7C7D36-8D4E-4E6B-93F4-4D00EA8FA6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E7C7D36-8D4E-4E6B-93F4-4D00EA8FA6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E7C7D36-8D4E-4E6B-93F4-4D00EA8FA6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24F839AC-293F-44A1-913D-BDCD491C9263}
+	EndGlobalSection
+EndGlobal

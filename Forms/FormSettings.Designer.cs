@@ -1,4 +1,4 @@
-﻿namespace GUI_SortifyBot
+﻿namespace SortifyBot_UI.Forms
 {
     partial class FormSettings
     {
@@ -28,34 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.btnChooseS = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
-            // panelDesktop
+            // btnChooseS
             // 
-            this.panelDesktop.BackColor = System.Drawing.Color.Green;
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(0, 0);
-            this.panelDesktop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1516, 777);
-            this.panelDesktop.TabIndex = 3;
+            this.btnChooseS.BackColor = System.Drawing.Color.Indigo;
+            this.btnChooseS.FlatAppearance.BorderSize = 0;
+            this.btnChooseS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChooseS.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChooseS.ForeColor = System.Drawing.Color.White;
+            this.btnChooseS.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnChooseS.IconColor = System.Drawing.Color.Black;
+            this.btnChooseS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnChooseS.Location = new System.Drawing.Point(70, 65);
+            this.btnChooseS.Name = "btnChooseS";
+            this.btnChooseS.Size = new System.Drawing.Size(218, 43);
+            this.btnChooseS.TabIndex = 26;
+            this.btnChooseS.Text = "CHOOSE SIMULATOR";
+            this.btnChooseS.UseVisualStyleBackColor = false;
+            this.btnChooseS.Click += new System.EventHandler(this.btnChooseS_Click);
             // 
             // FormSettings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1516, 777);
-            this.Controls.Add(this.panelDesktop);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
+            this.ClientSize = new System.Drawing.Size(1313, 762);
+            this.Controls.Add(this.btnChooseS);
             this.Name = "FormSettings";
-            this.Text = "Form1";
+            this.Text = "FormSettings";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panelDesktop;
+
+        private FontAwesome.Sharp.IconButton btnChooseS;
     }
 }
-

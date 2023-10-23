@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.iconButtonOpen = new FontAwesome.Sharp.IconButton();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBoxPort = new System.Windows.Forms.TextBox();
             this.stopButton = new FontAwesome.Sharp.IconButton();
@@ -46,13 +47,16 @@
             this.slider6 = new XComponent.SliderBar.MACTrackBar();
             this.slider4 = new XComponent.SliderBar.MACTrackBar();
             this.slider1 = new XComponent.SliderBar.MACTrackBar();
-            this.iconButtonOpen = new FontAwesome.Sharp.IconButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(17)))), ((int)(((byte)(59)))));
+            this.panelDesktop.Controls.Add(this.iconButton1);
+            this.panelDesktop.Controls.Add(this.button1);
             this.panelDesktop.Controls.Add(this.iconButtonOpen);
             this.panelDesktop.Controls.Add(this.textBox8);
             this.panelDesktop.Controls.Add(this.textBoxPort);
@@ -78,6 +82,24 @@
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1186, 640);
             this.panelDesktop.TabIndex = 3;
+            // 
+            // iconButtonOpen
+            // 
+            this.iconButtonOpen.BackColor = System.Drawing.Color.Purple;
+            this.iconButtonOpen.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.iconButtonOpen.FlatAppearance.BorderSize = 0;
+            this.iconButtonOpen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
+            this.iconButtonOpen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonOpen.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButtonOpen.IconColor = System.Drawing.Color.Empty;
+            this.iconButtonOpen.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonOpen.Location = new System.Drawing.Point(808, 568);
+            this.iconButtonOpen.Name = "iconButtonOpen";
+            this.iconButtonOpen.Size = new System.Drawing.Size(172, 41);
+            this.iconButtonOpen.TabIndex = 23;
+            this.iconButtonOpen.Text = "OPEN SIMULATION";
+            this.iconButtonOpen.UseVisualStyleBackColor = false;
+            this.iconButtonOpen.Click += new System.EventHandler(this.iconButtonOpen_Click);
             // 
             // textBox8
             // 
@@ -376,23 +398,27 @@
             this.slider1.Value = 0;
             this.slider1.ValueChanged += new XComponent.SliderBar.ValueChangedHandler(this.slider1_ValueChanged);
             // 
-            // iconButtonOpen
+            // button1
             // 
-            this.iconButtonOpen.BackColor = System.Drawing.Color.Purple;
-            this.iconButtonOpen.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.iconButtonOpen.FlatAppearance.BorderSize = 0;
-            this.iconButtonOpen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
-            this.iconButtonOpen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonOpen.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButtonOpen.IconColor = System.Drawing.Color.Empty;
-            this.iconButtonOpen.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonOpen.Location = new System.Drawing.Point(1014, 432);
-            this.iconButtonOpen.Name = "iconButtonOpen";
-            this.iconButtonOpen.Size = new System.Drawing.Size(172, 41);
-            this.iconButtonOpen.TabIndex = 23;
-            this.iconButtonOpen.Text = "OPEN SIMULATION";
-            this.iconButtonOpen.UseVisualStyleBackColor = false;
-            this.iconButtonOpen.Click += new System.EventHandler(this.iconButtonOpen_Click);
+            this.button1.AutoSize = true;
+            this.button1.Location = new System.Drawing.Point(773, 110);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(179, 101);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(781, 118);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(75, 23);
+            this.iconButton1.TabIndex = 25;
+            this.iconButton1.Text = "iconButton1";
+            this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // FormController
             // 
@@ -402,6 +428,8 @@
             this.Controls.Add(this.panelDesktop);
             this.Name = "FormController";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormController_Load);
+            this.Resize += new System.EventHandler(this.FormController_Resize);
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
             this.ResumeLayout(false);
@@ -429,6 +457,8 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBoxPort;
         private FontAwesome.Sharp.IconButton iconButtonOpen;
+        private System.Windows.Forms.Button button1;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
 

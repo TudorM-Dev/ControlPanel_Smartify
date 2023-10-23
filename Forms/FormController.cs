@@ -2,140 +2,192 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
-using FontAwesome.Sharp;
+using System.Windows.Forms.DataVisualization.Charting;
+using XComponent.SliderBar;
 
-namespace GUI_SortifyBot
+namespace SortifyBot_UI.Forms
 {
     public partial class FormController : Form
     {
-        //Forms
-        private IconButton currentBtn;
-        private Panel leftBorderBtn;
-        private Form currentChildForm;
-
-        //Constructor
+        
+        public static FormController instance;
+        
         public FormController()
         {
             InitializeComponent();
-            leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 60);
-            //Form
-            this.Text=string.Empty;
-            this.ControlBox = false;
-            this.DoubleBuffered = true;
-            this.MaximizedBounds=Screen.FromHandle(this.Handle).WorkingArea;
+            instance = this;
         }
 
-        //Structs
-        private struct RGBColors
+        private void TextBoxValue(MACTrackBar slider, System.Windows.Forms.TextBox textBox)
         {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(249, 118, 176);
-            public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(95, 77, 221);
-            public static Color color5 = Color.FromArgb(249, 88, 155);
-            public static Color color6 = Color.FromArgb(24, 161, 251);
+            textBox.Text = slider.Value.ToString();
         }
 
-        //Methods
-        private void ActivateButton(object senderBtn, Color color)
+        private void Slider(MACTrackBar slider, System.Windows.Forms.TextBox textBox)
         {
-            if(senderBtn != null) 
+
+            bool result = textBox.Text.Any(x => char.IsNumber(x));
+            if (result == true && textBox.Text != string.Empty)
             {
-                DisableButton();
-                //buttton
-                currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(53,58,216);
-                currentBtn.ForeColor = color;
-                currentBtn.TextAlign = ContentAlignment.MiddleCenter;
-                currentBtn.IconColor = color;
-                currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
-                currentBtn.ImageAlign = ContentAlignment.MiddleRight;
-                //left border button
-                leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0,currentBtn.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
-                //icon current child form
+                string onlyNumbers = Regex.Replace(textBox.Text, "[^. 0-9.-]", "");
+                slider.Value = Int32.Parse(onlyNumbers);
+                textBox.Text = onlyNumbers;
+            }
+            else if (textBox.Text == string.Empty)
+            {
+                slider.Value = 0;
+            }
 
+        }
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        static extern IntPtr SetParent(IntPtr hWndChild, IntPtr hWndNewParent);
+
+        public void btnOpenS_Click_1(object sender, EventArgs e)
+        {
+            if (!FormSettings.simSelected()) return;
+
+                string s = FormSettings.getExePath();
+
+                Process proc = Process.Start(s);
+                proc.WaitForInputIdle();
+
+                while (proc.MainWindowHandle == IntPtr.Zero)
+                {
+                    Thread.Sleep(500);
+                    proc.Refresh();
+                }
+                SetParent(proc.MainWindowHandle, this.Handle);
+        }
+
+        private void output()
+        {
+            Console.WriteLine(slider1.Value + " " + slider2.Value + " " + slider3.Value + " " + slider4.Value + " " + slider5.Value + " " + slider6.Value);
+        }
+
+
+        private void slider1_ValueChanged(object sender, decimal value)
+        {
+            TextBoxValue(slider1, textBox1);
+            
+        }
+        private void slider2_ValueChanged(object sender, decimal value)
+        {
+            TextBoxValue(slider2, textBox2);
+            
+        }
+        private void slider3_ValueChanged(object sender, decimal value)
+        {
+            TextBoxValue(slider3, textBox3);
+            
+        }
+        private void slider4_ValueChanged(object sender, decimal value)
+        {
+            TextBoxValue(slider4, textBox4);
+            
+        }
+        private void slider5_ValueChanged(object sender, decimal value)
+        {
+            TextBoxValue(slider5, textBox5);
+            
+        }
+        private void slider6_ValueChanged(object sender, decimal value)
+        {
+            TextBoxValue(slider6, textBox6);
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Slider(slider1, textBox1);
+            output();
+        }
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            Slider(slider2, textBox2);
+            output();
+        }
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            Slider(slider3, textBox3);
+            output();
+        }
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            Slider(slider4, textBox4);
+            output();
+        }
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            Slider(slider5, textBox5);
+            output();
+        }
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            Slider(slider6, textBox6);
+            output();
+        }
+
+        private void FormController_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = "0";
+            textBox2.Text = "0";
+            textBox3.Text = "0";
+            textBox4.Text = "0";
+            textBox5.Text = "0";
+            textBox6.Text = "0";
+        }
+
+        private void textBoxPort_TextChanged(object sender, EventArgs e)
+        {
+            string onlyNumbers = Regex.Replace(textBoxPort.Text, "[^. 0-9.-]", "");
+            textBoxPort.Text = onlyNumbers;
+        }
+
+        private void btnAuto_MouseEnter(object sender, EventArgs e)
+        {
+            if (btnAuto.Text == "MANUAL")
+                btnAuto.BackColor = Color.Cyan;
+            else
+                btnAuto.BackColor = Color.DarkCyan;
+        }
+
+        private void btnAuto_MouseLeave(object sender, EventArgs e)
+        {
+            if (btnAuto.Text == "MANUAL")
+                btnAuto.BackColor = Color.DarkCyan;
+            else
+                btnAuto.BackColor = Color.Cyan;
+        }
+
+        private void btnAuto_Click(object sender, EventArgs e)
+        {
+            if (btnAuto.Text == "MANUAL")
+            {
+                btnAuto.BackColor = Color.Cyan;
+                btnAuto.Text = "AUTOMATIC";
+            }
+            else
+            {
+                btnAuto.BackColor = Color.DarkCyan;
+                btnAuto.Text = "MANUAL";
             }
         }
 
-        private void DisableButton()
+        private void btnSendData_Click(object sender, EventArgs e)
         {
-            if(currentBtn != null)
-            {
-                currentBtn.BackColor = Color.MidnightBlue;
-                currentBtn.ForeColor = Color.Gainsboro;
-                currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Gainsboro;
-                currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
-                currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            }
-        }
-
-        private void OpenChildForm(Form childForm)
-        {
-            if(currentChildForm != null)
-            {
-                //open only form
-                currentChildForm.Close();  
-
-            }
-            currentChildForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelDesktop.Controls.Add(childForm);
-            panelDesktop.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-
-        }
-
-        //Menu Button_Clicks
-     
-        private void btnDashboard_Click_1(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-        }
-
-        private void btnController_Click_1(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color2);
-        }
-
-        private void btnSettings_Click_1(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color3);
-        }
-
-        //drag form
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            TextWriter text1 = new StreamWriter("E:\\Proiecte C# VS\\SortifyBot UI\\Resources\\RobotData.txt");
+            text1.WriteLine(textBox1.Text + " " + textBox2.Text + " " + textBox3.Text + " " + textBox4.Text + " " + textBox5.Text + " " + textBox6.Text + " ");
+            text1.Close();
         }
     }
 }
