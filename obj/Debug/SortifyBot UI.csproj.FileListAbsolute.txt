@@ -46,3 +46,19 @@ E:\Proiecte C# VS\Git rosef\ControlPanel_Smartify\obj\Debug\SortifyBot UI.csproj
 E:\Proiecte C# VS\Git rosef\ControlPanel_Smartify\obj\Debug\SortifyBot UI.csproj.CopyComplete
 E:\Proiecte C# VS\Git rosef\ControlPanel_Smartify\obj\Debug\SortifyBot UI.exe
 E:\Proiecte C# VS\Git rosef\ControlPanel_Smartify\obj\Debug\SortifyBot UI.pdb
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\bin\Debug\SortifyBot UI.exe.config
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\bin\Debug\SortifyBot UI.exe
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\bin\Debug\SortifyBot UI.pdb
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\bin\Debug\FontAwesome.Sharp.dll
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\bin\Debug\MACTrackBarLib.dll
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\SortifyBot UI.csproj.AssemblyReference.cache
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\SortifyBot_UI.Form1.resources
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\SortifyBot_UI.Forms.FormController.resources
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\SortifyBot_UI.Forms.FormDashboard.resources
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\SortifyBot_UI.Forms.FormSettings.resources
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\SortifyBot_UI.Properties.Resources.resources
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\SortifyBot UI.csproj.GenerateResource.cache
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\SortifyBot UI.csproj.CoreCompileInputs.cache
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\SortifyBot UI.csproj.CopyComplete
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\SortifyBot UI.exe
+D:\Projects\SmartifyBot_RoSef\ControlPanel_Smartify\obj\Debug\SortifyBot UI.pdb

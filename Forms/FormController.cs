@@ -123,7 +123,7 @@ namespace SortifyBot_UI.Forms
 
         private void btnSendData_Click(object sender, EventArgs e)
         {
-            TextWriter text1 = new StreamWriter("E:\\Proiecte C# VS\\SortifyBot UI\\Resources\\RobotData.txt");
+            TextWriter text1 = new StreamWriter("RobotData.txt");
             text1.WriteLine(textBox1.Text + " " + textBox2.Text + " " + textBox3.Text + " " + textBox4.Text + " " + textBox5.Text + " " + textBox6.Text + " ");
             text1.Close();
         }
