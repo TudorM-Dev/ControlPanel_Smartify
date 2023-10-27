@@ -99,7 +99,7 @@ namespace SortifyBot_UI.Forms
                 btnAuto.BackColor = Color.DarkCyan;
         }
 
-        private void btnAuto_MouseLeave(object sender, EventArgs e)
+        private void btnAuto_MouseLeave(object sender, EventArgs e)//test
         {
             if (btnAuto.Text == "MANUAL")
                 btnAuto.BackColor = Color.DarkCyan;
