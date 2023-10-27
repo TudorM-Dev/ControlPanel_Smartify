@@ -41,13 +41,13 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.btnConnect = new FontAwesome.Sharp.IconButton();
-            this.btnStop = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxPort = new System.Windows.Forms.TextBox();
-            this.btnSendData = new FontAwesome.Sharp.IconButton();
-            this.btnOpenS = new FontAwesome.Sharp.IconButton();
             this.btnAuto = new FontAwesome.Sharp.IconButton();
+            this.btnOpenS = new FontAwesome.Sharp.IconButton();
+            this.btnSendData = new FontAwesome.Sharp.IconButton();
+            this.btnStop = new FontAwesome.Sharp.IconButton();
+            this.btnConnect = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +61,7 @@
             this.panel1.Controls.Add(this.slider1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(618, 762);
+            this.panel1.Size = new System.Drawing.Size(618, 719);
             this.panel1.TabIndex = 0;
             // 
             // slider6
@@ -69,20 +69,20 @@
             this.slider6.BackColor = System.Drawing.Color.Transparent;
             this.slider6.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.slider6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.slider6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(29)))), ((int)(((byte)(28)))));
+            this.slider6.ForeColor = System.Drawing.Color.White;
             this.slider6.IndentHeight = 6;
             this.slider6.IndentWidth = 5;
-            this.slider6.Location = new System.Drawing.Point(12, 660);
+            this.slider6.Location = new System.Drawing.Point(12, 645);
             this.slider6.Maximum = 100;
             this.slider6.Minimum = 0;
             this.slider6.Name = "slider6";
             this.slider6.Size = new System.Drawing.Size(600, 53);
             this.slider6.TabIndex = 5;
             this.slider6.TextTickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.slider6.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.slider6.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.slider6.TickFrequency = 10;
             this.slider6.TickHeight = 10;
-            this.slider6.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.slider6.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.slider6.TrackerSize = new System.Drawing.Size(16, 16);
             this.slider6.TrackLineColor = System.Drawing.Color.White;
             this.slider6.TrackLineHeight = 3;
@@ -95,20 +95,20 @@
             this.slider5.BackColor = System.Drawing.Color.Transparent;
             this.slider5.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.slider5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.slider5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(29)))), ((int)(((byte)(28)))));
+            this.slider5.ForeColor = System.Drawing.Color.White;
             this.slider5.IndentHeight = 6;
             this.slider5.IndentWidth = 5;
-            this.slider5.Location = new System.Drawing.Point(12, 537);
+            this.slider5.Location = new System.Drawing.Point(12, 526);
             this.slider5.Maximum = 150;
             this.slider5.Minimum = -150;
             this.slider5.Name = "slider5";
             this.slider5.Size = new System.Drawing.Size(600, 53);
             this.slider5.TabIndex = 4;
             this.slider5.TextTickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.slider5.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.slider5.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.slider5.TickFrequency = 20;
             this.slider5.TickHeight = 10;
-            this.slider5.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.slider5.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.slider5.TrackerSize = new System.Drawing.Size(16, 16);
             this.slider5.TrackLineColor = System.Drawing.Color.White;
             this.slider5.TrackLineHeight = 3;
@@ -121,20 +121,20 @@
             this.slider4.BackColor = System.Drawing.Color.Transparent;
             this.slider4.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.slider4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.slider4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(29)))), ((int)(((byte)(28)))));
+            this.slider4.ForeColor = System.Drawing.Color.White;
             this.slider4.IndentHeight = 6;
             this.slider4.IndentWidth = 5;
-            this.slider4.Location = new System.Drawing.Point(12, 416);
+            this.slider4.Location = new System.Drawing.Point(12, 407);
             this.slider4.Maximum = 180;
             this.slider4.Minimum = -180;
             this.slider4.Name = "slider4";
             this.slider4.Size = new System.Drawing.Size(600, 53);
             this.slider4.TabIndex = 3;
             this.slider4.TextTickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.slider4.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.slider4.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.slider4.TickFrequency = 20;
             this.slider4.TickHeight = 10;
-            this.slider4.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.slider4.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.slider4.TrackerSize = new System.Drawing.Size(16, 16);
             this.slider4.TrackLineColor = System.Drawing.Color.White;
             this.slider4.TrackLineHeight = 3;
@@ -147,20 +147,20 @@
             this.slider3.BackColor = System.Drawing.Color.Transparent;
             this.slider3.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.slider3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.slider3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(29)))), ((int)(((byte)(28)))));
+            this.slider3.ForeColor = System.Drawing.Color.White;
             this.slider3.IndentHeight = 6;
             this.slider3.IndentWidth = 5;
-            this.slider3.Location = new System.Drawing.Point(12, 294);
+            this.slider3.Location = new System.Drawing.Point(12, 288);
             this.slider3.Maximum = 150;
             this.slider3.Minimum = -150;
             this.slider3.Name = "slider3";
             this.slider3.Size = new System.Drawing.Size(600, 53);
             this.slider3.TabIndex = 2;
             this.slider3.TextTickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.slider3.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.slider3.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.slider3.TickFrequency = 20;
             this.slider3.TickHeight = 10;
-            this.slider3.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.slider3.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.slider3.TrackerSize = new System.Drawing.Size(16, 16);
             this.slider3.TrackLineColor = System.Drawing.Color.White;
             this.slider3.TrackLineHeight = 3;
@@ -173,20 +173,20 @@
             this.slider2.BackColor = System.Drawing.Color.Transparent;
             this.slider2.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.slider2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.slider2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(29)))), ((int)(((byte)(28)))));
+            this.slider2.ForeColor = System.Drawing.Color.White;
             this.slider2.IndentHeight = 6;
             this.slider2.IndentWidth = 5;
-            this.slider2.Location = new System.Drawing.Point(12, 172);
+            this.slider2.Location = new System.Drawing.Point(12, 169);
             this.slider2.Maximum = 150;
             this.slider2.Minimum = -150;
             this.slider2.Name = "slider2";
             this.slider2.Size = new System.Drawing.Size(600, 53);
             this.slider2.TabIndex = 1;
             this.slider2.TextTickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.slider2.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.slider2.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.slider2.TickFrequency = 20;
             this.slider2.TickHeight = 10;
-            this.slider2.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.slider2.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.slider2.TrackerSize = new System.Drawing.Size(16, 16);
             this.slider2.TrackLineColor = System.Drawing.Color.White;
             this.slider2.TrackLineHeight = 3;
@@ -199,7 +199,7 @@
             this.slider1.BackColor = System.Drawing.Color.Transparent;
             this.slider1.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.slider1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.slider1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(29)))), ((int)(((byte)(28)))));
+            this.slider1.ForeColor = System.Drawing.Color.White;
             this.slider1.IndentHeight = 6;
             this.slider1.IndentWidth = 5;
             this.slider1.Location = new System.Drawing.Point(12, 50);
@@ -209,10 +209,10 @@
             this.slider1.Size = new System.Drawing.Size(600, 53);
             this.slider1.TabIndex = 0;
             this.slider1.TextTickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.slider1.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.slider1.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.slider1.TickFrequency = 20;
             this.slider1.TickHeight = 10;
-            this.slider1.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.slider1.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.slider1.TrackerSize = new System.Drawing.Size(16, 16);
             this.slider1.TrackLineColor = System.Drawing.Color.White;
             this.slider1.TrackLineHeight = 3;
@@ -222,106 +222,167 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(623, 66);
+            this.textBox1.Location = new System.Drawing.Point(623, 67);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox1.Size = new System.Drawing.Size(76, 26);
             this.textBox1.TabIndex = 14;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(623, 188);
+            this.textBox2.Location = new System.Drawing.Point(623, 184);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox2.Size = new System.Drawing.Size(76, 26);
             this.textBox2.TabIndex = 15;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(623, 310);
+            this.textBox3.Location = new System.Drawing.Point(623, 303);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox3.Size = new System.Drawing.Size(76, 26);
             this.textBox3.TabIndex = 16;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox4.Location = new System.Drawing.Point(623, 432);
+            this.textBox4.Location = new System.Drawing.Point(623, 424);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox4.Size = new System.Drawing.Size(76, 26);
             this.textBox4.TabIndex = 17;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox5.Location = new System.Drawing.Point(623, 554);
+            this.textBox5.Location = new System.Drawing.Point(623, 542);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox5.Size = new System.Drawing.Size(76, 26);
             this.textBox5.TabIndex = 18;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
+            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(623, 676);
+            this.textBox6.Location = new System.Drawing.Point(623, 662);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
             this.textBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox6.Size = new System.Drawing.Size(76, 26);
             this.textBox6.TabIndex = 19;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
-            // btnConnect
+            // label1
             // 
-            this.btnConnect.BackColor = System.Drawing.Color.Green;
-            this.btnConnect.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.btnConnect.FlatAppearance.BorderSize = 0;
-            this.btnConnect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
-            this.btnConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConnect.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConnect.ForeColor = System.Drawing.Color.White;
-            this.btnConnect.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnConnect.IconColor = System.Drawing.Color.Empty;
-            this.btnConnect.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnConnect.Location = new System.Drawing.Point(12, 768);
-            this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(119, 33);
-            this.btnConnect.TabIndex = 20;
-            this.btnConnect.Text = "CONNECT";
-            this.btnConnect.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(485, 731);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 18);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Port:";
+            // 
+            // textBoxPort
+            // 
+            this.textBoxPort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
+            this.textBoxPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPort.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxPort.Location = new System.Drawing.Point(542, 727);
+            this.textBoxPort.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPort.MaxLength = 4;
+            this.textBoxPort.Name = "textBoxPort";
+            this.textBoxPort.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBoxPort.Size = new System.Drawing.Size(76, 26);
+            this.textBoxPort.TabIndex = 23;
+            this.textBoxPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxPort.TextChanged += new System.EventHandler(this.textBoxPort_TextChanged);
+            // 
+            // btnAuto
+            // 
+            this.btnAuto.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnAuto.FlatAppearance.BorderSize = 0;
+            this.btnAuto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAuto.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAuto.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnAuto.IconColor = System.Drawing.Color.Black;
+            this.btnAuto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAuto.Location = new System.Drawing.Point(12, 769);
+            this.btnAuto.Name = "btnAuto";
+            this.btnAuto.Size = new System.Drawing.Size(319, 40);
+            this.btnAuto.TabIndex = 26;
+            this.btnAuto.Text = "MANUAL";
+            this.btnAuto.UseVisualStyleBackColor = false;
+            this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
+            this.btnAuto.MouseEnter += new System.EventHandler(this.btnAuto_MouseEnter);
+            this.btnAuto.MouseLeave += new System.EventHandler(this.btnAuto_MouseLeave);
+            // 
+            // btnOpenS
+            // 
+            this.btnOpenS.BackColor = System.Drawing.Color.Indigo;
+            this.btnOpenS.FlatAppearance.BorderSize = 0;
+            this.btnOpenS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOpenS.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenS.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnOpenS.IconColor = System.Drawing.Color.Black;
+            this.btnOpenS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOpenS.Location = new System.Drawing.Point(380, 769);
+            this.btnOpenS.Name = "btnOpenS";
+            this.btnOpenS.Size = new System.Drawing.Size(319, 40);
+            this.btnOpenS.TabIndex = 25;
+            this.btnOpenS.Text = "OPEN SIMULATION";
+            this.btnOpenS.UseVisualStyleBackColor = false;
+            this.btnOpenS.Click += new System.EventHandler(this.btnOpenS_Click_1);
+            // 
+            // btnSendData
+            // 
+            this.btnSendData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(40)))), ((int)(((byte)(29)))));
+            this.btnSendData.FlatAppearance.BorderSize = 0;
+            this.btnSendData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSendData.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSendData.ForeColor = System.Drawing.Color.White;
+            this.btnSendData.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnSendData.IconColor = System.Drawing.Color.Black;
+            this.btnSendData.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSendData.Location = new System.Drawing.Point(624, 693);
+            this.btnSendData.Name = "btnSendData";
+            this.btnSendData.Size = new System.Drawing.Size(75, 60);
+            this.btnSendData.TabIndex = 24;
+            this.btnSendData.Text = "SEND DATA";
+            this.btnSendData.UseVisualStyleBackColor = false;
+            this.btnSendData.Click += new System.EventHandler(this.btnSendData_Click);
             // 
             // btnStop
             // 
@@ -335,98 +396,37 @@
             this.btnStop.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnStop.IconColor = System.Drawing.Color.Empty;
             this.btnStop.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnStop.Location = new System.Drawing.Point(252, 768);
+            this.btnStop.Location = new System.Drawing.Point(277, 725);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(119, 33);
             this.btnStop.TabIndex = 21;
             this.btnStop.Text = "STOP";
             this.btnStop.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // btnConnect
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(479, 774);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 18);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Port:";
-            // 
-            // textBoxPort
-            // 
-            this.textBoxPort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(21)))), ((int)(((byte)(23)))));
-            this.textBoxPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPort.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxPort.Location = new System.Drawing.Point(536, 770);
-            this.textBoxPort.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxPort.MaxLength = 4;
-            this.textBoxPort.Name = "textBoxPort";
-            this.textBoxPort.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBoxPort.Size = new System.Drawing.Size(76, 26);
-            this.textBoxPort.TabIndex = 23;
-            this.textBoxPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBoxPort.TextChanged += new System.EventHandler(this.textBoxPort_TextChanged);
-            // 
-            // btnSendData
-            // 
-            this.btnSendData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(29)))), ((int)(((byte)(28)))));
-            this.btnSendData.FlatAppearance.BorderSize = 0;
-            this.btnSendData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSendData.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSendData.ForeColor = System.Drawing.Color.White;
-            this.btnSendData.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnSendData.IconColor = System.Drawing.Color.Black;
-            this.btnSendData.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSendData.Location = new System.Drawing.Point(624, 716);
-            this.btnSendData.Name = "btnSendData";
-            this.btnSendData.Size = new System.Drawing.Size(75, 85);
-            this.btnSendData.TabIndex = 24;
-            this.btnSendData.Text = "SEND DATA";
-            this.btnSendData.UseVisualStyleBackColor = false;
-            this.btnSendData.Click += new System.EventHandler(this.btnSendData_Click);
-            // 
-            // btnOpenS
-            // 
-            this.btnOpenS.BackColor = System.Drawing.Color.Indigo;
-            this.btnOpenS.FlatAppearance.BorderSize = 0;
-            this.btnOpenS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpenS.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenS.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnOpenS.IconColor = System.Drawing.Color.Black;
-            this.btnOpenS.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOpenS.Location = new System.Drawing.Point(799, 12);
-            this.btnOpenS.Name = "btnOpenS";
-            this.btnOpenS.Size = new System.Drawing.Size(36, 789);
-            this.btnOpenS.TabIndex = 25;
-            this.btnOpenS.Text = "OPEN    SIMULATION";
-            this.btnOpenS.UseVisualStyleBackColor = false;
-            this.btnOpenS.Click += new System.EventHandler(this.btnOpenS_Click_1);
-            // 
-            // btnAuto
-            // 
-            this.btnAuto.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnAuto.FlatAppearance.BorderSize = 0;
-            this.btnAuto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAuto.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAuto.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnAuto.IconColor = System.Drawing.Color.Black;
-            this.btnAuto.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAuto.Location = new System.Drawing.Point(727, 12);
-            this.btnAuto.Name = "btnAuto";
-            this.btnAuto.Size = new System.Drawing.Size(36, 789);
-            this.btnAuto.TabIndex = 26;
-            this.btnAuto.Text = "MANUAL";
-            this.btnAuto.UseVisualStyleBackColor = false;
-            this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
-            this.btnAuto.MouseEnter += new System.EventHandler(this.btnAuto_MouseEnter);
-            this.btnAuto.MouseLeave += new System.EventHandler(this.btnAuto_MouseLeave);
+            this.btnConnect.BackColor = System.Drawing.Color.Green;
+            this.btnConnect.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.btnConnect.FlatAppearance.BorderSize = 0;
+            this.btnConnect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btnConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConnect.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConnect.ForeColor = System.Drawing.Color.White;
+            this.btnConnect.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnConnect.IconColor = System.Drawing.Color.Empty;
+            this.btnConnect.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnConnect.Location = new System.Drawing.Point(12, 725);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(119, 33);
+            this.btnConnect.TabIndex = 20;
+            this.btnConnect.Text = "CONNECT";
+            this.btnConnect.UseVisualStyleBackColor = false;
             // 
             // FormController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(1367, 821);
             this.Controls.Add(this.btnAuto);
             this.Controls.Add(this.btnOpenS);
