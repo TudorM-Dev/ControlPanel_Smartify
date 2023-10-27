@@ -70,7 +70,7 @@ namespace SortifyBot_UI.Forms
                     Thread.Sleep(500);
                     proc.Refresh();
                 }
-                SetParent(proc.MainWindowHandle, this.Handle);
+                //SetParent(proc.MainWindowHandle, this.Handle);
         }
 
         private void updateGlobalValue()
