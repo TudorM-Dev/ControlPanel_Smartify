@@ -48,6 +48,10 @@
             this.btnSendData = new FontAwesome.Sharp.IconButton();
             this.btnStop = new FontAwesome.Sharp.IconButton();
             this.btnConnect = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,9 +63,9 @@
             this.panel1.Controls.Add(this.slider3);
             this.panel1.Controls.Add(this.slider2);
             this.panel1.Controls.Add(this.slider1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(51, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(618, 719);
+            this.panel1.Size = new System.Drawing.Size(618, 631);
             this.panel1.TabIndex = 0;
             // 
             // slider6
@@ -72,7 +76,7 @@
             this.slider6.ForeColor = System.Drawing.Color.White;
             this.slider6.IndentHeight = 6;
             this.slider6.IndentWidth = 5;
-            this.slider6.Location = new System.Drawing.Point(12, 645);
+            this.slider6.Location = new System.Drawing.Point(11, 567);
             this.slider6.Maximum = 100;
             this.slider6.Minimum = 0;
             this.slider6.Name = "slider6";
@@ -98,7 +102,7 @@
             this.slider5.ForeColor = System.Drawing.Color.White;
             this.slider5.IndentHeight = 6;
             this.slider5.IndentWidth = 5;
-            this.slider5.Location = new System.Drawing.Point(12, 526);
+            this.slider5.Location = new System.Drawing.Point(12, 456);
             this.slider5.Maximum = 150;
             this.slider5.Minimum = -150;
             this.slider5.Name = "slider5";
@@ -124,7 +128,7 @@
             this.slider4.ForeColor = System.Drawing.Color.White;
             this.slider4.IndentHeight = 6;
             this.slider4.IndentWidth = 5;
-            this.slider4.Location = new System.Drawing.Point(12, 407);
+            this.slider4.Location = new System.Drawing.Point(12, 345);
             this.slider4.Maximum = 180;
             this.slider4.Minimum = -180;
             this.slider4.Name = "slider4";
@@ -150,7 +154,7 @@
             this.slider3.ForeColor = System.Drawing.Color.White;
             this.slider3.IndentHeight = 6;
             this.slider3.IndentWidth = 5;
-            this.slider3.Location = new System.Drawing.Point(12, 288);
+            this.slider3.Location = new System.Drawing.Point(12, 234);
             this.slider3.Maximum = 150;
             this.slider3.Minimum = -150;
             this.slider3.Name = "slider3";
@@ -176,7 +180,7 @@
             this.slider2.ForeColor = System.Drawing.Color.White;
             this.slider2.IndentHeight = 6;
             this.slider2.IndentWidth = 5;
-            this.slider2.Location = new System.Drawing.Point(12, 169);
+            this.slider2.Location = new System.Drawing.Point(12, 123);
             this.slider2.Maximum = 150;
             this.slider2.Minimum = -150;
             this.slider2.Name = "slider2";
@@ -202,7 +206,7 @@
             this.slider1.ForeColor = System.Drawing.Color.White;
             this.slider1.IndentHeight = 6;
             this.slider1.IndentWidth = 5;
-            this.slider1.Location = new System.Drawing.Point(12, 50);
+            this.slider1.Location = new System.Drawing.Point(12, 12);
             this.slider1.Maximum = 150;
             this.slider1.Minimum = -150;
             this.slider1.Name = "slider1";
@@ -225,7 +229,7 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(623, 67);
+            this.textBox1.Location = new System.Drawing.Point(674, 29);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -239,7 +243,7 @@
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(623, 184);
+            this.textBox2.Location = new System.Drawing.Point(674, 139);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -253,7 +257,7 @@
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(623, 303);
+            this.textBox3.Location = new System.Drawing.Point(674, 249);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -267,7 +271,7 @@
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox4.Location = new System.Drawing.Point(623, 424);
+            this.textBox4.Location = new System.Drawing.Point(674, 359);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -281,7 +285,7 @@
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox5.Location = new System.Drawing.Point(623, 542);
+            this.textBox5.Location = new System.Drawing.Point(674, 469);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -295,7 +299,7 @@
             this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(623, 662);
+            this.textBox6.Location = new System.Drawing.Point(674, 579);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
             this.textBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -309,7 +313,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(485, 731);
+            this.label1.Location = new System.Drawing.Point(535, 658);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 18);
             this.label1.TabIndex = 22;
@@ -320,7 +324,7 @@
             this.textBoxPort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(6)))), ((int)(((byte)(23)))));
             this.textBoxPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPort.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxPort.Location = new System.Drawing.Point(542, 727);
+            this.textBoxPort.Location = new System.Drawing.Point(592, 654);
             this.textBoxPort.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPort.MaxLength = 4;
             this.textBoxPort.Name = "textBoxPort";
@@ -339,7 +343,7 @@
             this.btnAuto.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnAuto.IconColor = System.Drawing.Color.Black;
             this.btnAuto.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAuto.Location = new System.Drawing.Point(12, 769);
+            this.btnAuto.Location = new System.Drawing.Point(62, 706);
             this.btnAuto.Name = "btnAuto";
             this.btnAuto.Size = new System.Drawing.Size(319, 40);
             this.btnAuto.TabIndex = 26;
@@ -358,7 +362,7 @@
             this.btnOpenS.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnOpenS.IconColor = System.Drawing.Color.Black;
             this.btnOpenS.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOpenS.Location = new System.Drawing.Point(380, 769);
+            this.btnOpenS.Location = new System.Drawing.Point(431, 706);
             this.btnOpenS.Name = "btnOpenS";
             this.btnOpenS.Size = new System.Drawing.Size(319, 40);
             this.btnOpenS.TabIndex = 25;
@@ -376,9 +380,9 @@
             this.btnSendData.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnSendData.IconColor = System.Drawing.Color.Black;
             this.btnSendData.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSendData.Location = new System.Drawing.Point(624, 693);
+            this.btnSendData.Location = new System.Drawing.Point(675, 632);
             this.btnSendData.Name = "btnSendData";
-            this.btnSendData.Size = new System.Drawing.Size(75, 60);
+            this.btnSendData.Size = new System.Drawing.Size(75, 48);
             this.btnSendData.TabIndex = 24;
             this.btnSendData.Text = "SEND DATA";
             this.btnSendData.UseVisualStyleBackColor = false;
@@ -396,9 +400,9 @@
             this.btnStop.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnStop.IconColor = System.Drawing.Color.Empty;
             this.btnStop.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnStop.Location = new System.Drawing.Point(277, 725);
+            this.btnStop.Location = new System.Drawing.Point(327, 642);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(119, 33);
+            this.btnStop.Size = new System.Drawing.Size(117, 53);
             this.btnStop.TabIndex = 21;
             this.btnStop.Text = "STOP";
             this.btnStop.UseVisualStyleBackColor = false;
@@ -415,12 +419,88 @@
             this.btnConnect.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnConnect.IconColor = System.Drawing.Color.Empty;
             this.btnConnect.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnConnect.Location = new System.Drawing.Point(12, 725);
+            this.btnConnect.Location = new System.Drawing.Point(62, 642);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(119, 33);
+            this.btnConnect.Size = new System.Drawing.Size(117, 53);
             this.btnConnect.TabIndex = 20;
             this.btnConnect.Text = "CONNECT";
             this.btnConnect.UseVisualStyleBackColor = false;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(29)))));
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Empty;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(62, 763);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(118, 57);
+            this.iconButton1.TabIndex = 27;
+            this.iconButton1.Text = "NEW PROGRAM";
+            this.iconButton1.UseVisualStyleBackColor = false;
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(29)))));
+            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.White;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton2.IconColor = System.Drawing.Color.Empty;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.Location = new System.Drawing.Point(252, 763);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(118, 57);
+            this.iconButton2.TabIndex = 28;
+            this.iconButton2.Text = "SAVE POSITION";
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(29)))));
+            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.ForeColor = System.Drawing.Color.White;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton3.IconColor = System.Drawing.Color.Empty;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.Location = new System.Drawing.Point(441, 763);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(118, 57);
+            this.iconButton3.TabIndex = 29;
+            this.iconButton3.Text = "DELETE POSITION";
+            this.iconButton3.UseVisualStyleBackColor = false;
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(29)))));
+            this.iconButton4.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton4.ForeColor = System.Drawing.Color.White;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton4.IconColor = System.Drawing.Color.Empty;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.Location = new System.Drawing.Point(632, 763);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(118, 57);
+            this.iconButton4.TabIndex = 30;
+            this.iconButton4.Text = "RUN  PROGRAM";
+            this.iconButton4.UseVisualStyleBackColor = false;
             // 
             // FormController
             // 
@@ -428,6 +508,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(1367, 821);
+            this.Controls.Add(this.iconButton4);
+            this.Controls.Add(this.iconButton3);
+            this.Controls.Add(this.iconButton2);
+            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.btnAuto);
             this.Controls.Add(this.btnOpenS);
             this.Controls.Add(this.btnSendData);
@@ -474,5 +558,9 @@
         private FontAwesome.Sharp.IconButton btnSendData;
         private FontAwesome.Sharp.IconButton btnOpenS;
         private FontAwesome.Sharp.IconButton btnAuto;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton iconButton4;
     }
 }
