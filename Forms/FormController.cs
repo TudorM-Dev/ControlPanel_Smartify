@@ -48,22 +48,33 @@ namespace SortifyBot_UI.Forms
 
         private void recEngine_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
-            string result = e.Result.Text;
 
-            if(btnAuto.Text == "AUTO")
+            try
             {
-                if(result == "Hello")
-                {
-                    result = "Hi, how can I help you";
-                }
+                string result = e.Result.Text;
 
-                if (result == "Turn around")
+                if (btnAuto.Text == "AUTO")
                 {
-                    result = "Turning around right now";
-                }
+                    if (result == "Wake up")
+                    {
+                        result = "Hi, how can I help you";
 
-                speech.SpeakAsync(result);
-                labelSpeech.Text = result;
+                    }
+                    else if (result == "Turn around")
+                    {
+                        result = "Turning around right now";
+                    }
+
+                    speech.SpeakAsync(result);
+                    labelSpeech.Text = result;
+
+
+                    return;
+
+                }
+            }
+            finally 
+            {
             }
 
         }
