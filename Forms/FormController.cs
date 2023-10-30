@@ -13,6 +13,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using XComponent.SliderBar;
+using System.Speech;
+using System.Speech.Recognition;
+using System.Speech.Synthesis;
 
 namespace SortifyBot_UI.Forms
 {
@@ -22,11 +25,47 @@ namespace SortifyBot_UI.Forms
         String jointSerialOutput;
 
         public static FormController instance;
-        
+
+        SpeechRecognitionEngine recEngine = new SpeechRecognitionEngine();
+        SpeechSynthesizer speech = new SpeechSynthesizer();
+
+
         public FormController()
         {
             InitializeComponent();
             instance = this;
+            Choices choices = new Choices();
+            string[] text = File.ReadAllLines(Environment.CurrentDirectory + "//Grammar.txt");
+            choices.Add(text);
+            Grammar grammar = new Grammar(new GrammarBuilder(choices));
+            recEngine.LoadGrammar(grammar);
+            recEngine.SetInputToDefaultAudioDevice();
+            recEngine.RecognizeAsync(RecognizeMode.Multiple);
+            recEngine.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(recEngine_SpeechRecognized);
+
+            speech.SelectVoiceByHints(VoiceGender.Male);
+        }
+
+        private void recEngine_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string result = e.Result.Text;
+
+            if(btnAuto.Text == "AUTO")
+            {
+                if(result == "Hello")
+                {
+                    result = "Hi, how can I help you";
+                }
+
+                if (result == "Turn around")
+                {
+                    result = "Turning around right now";
+                }
+
+                speech.SpeakAsync(result);
+                labelSpeech.Text = result;
+            }
+
         }
 
         private void TextBoxValue(MACTrackBar slider, System.Windows.Forms.TextBox textBox)
@@ -60,16 +99,8 @@ namespace SortifyBot_UI.Forms
         {
             if (!FormSettings.simSelected()) return;
 
-                string s = FormSettings.getExePath();
-
-                Process proc = Process.Start(s);
-                proc.WaitForInputIdle();
-
-                while (proc.MainWindowHandle == IntPtr.Zero)
-                {
-                    Thread.Sleep(500);
-                    proc.Refresh();
-                }
+            string s = FormSettings.getExePath();
+            System.Diagnostics.Process.Start(s);
                 //SetParent(proc.MainWindowHandle, this.Handle);
         }
 
@@ -107,19 +138,6 @@ namespace SortifyBot_UI.Forms
                 btnAuto.BackColor = Color.Cyan;
         }
 
-        private void btnAuto_Click(object sender, EventArgs e)
-        {
-            if (btnAuto.Text == "MANUAL")
-            {
-                btnAuto.BackColor = Color.Cyan;
-                btnAuto.Text = "AUTOMATIC";
-            }
-            else
-            {
-                btnAuto.BackColor = Color.DarkCyan;
-                btnAuto.Text = "MANUAL";
-            }
-        }
 
         private void btnSendData_Click(object sender, EventArgs e)
         {
@@ -197,8 +215,56 @@ namespace SortifyBot_UI.Forms
             textBox6.Text = "0";
         }
 
+
         #endregion
 
+        private void changeToStop()
+        {
+            btnConnect.Text = "STOP";
+            btnConnect.BackColor = Color.Red;
+        }
+
+        private void changeToConnect()
+        {
+            btnConnect.Text = "CONNECt";
+            btnConnect.BackColor = Color.Green;
+        }
         
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void changeToManual()
+        {
+            btnAuto.BackColor = Color.DarkCyan;
+            btnAuto.Text = "MANUAL";
+        }
+
+        private void changeToAuto()
+        {
+            btnAuto.BackColor = Color.Cyan;
+            btnAuto.Text = "AUTO";
+        }
+        private void btnAuto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void changeToReset()
+        {
+            btnReset.Text = "RESET";
+            btnReset.BackColor = Color.Red;
+        }
+
+        private void changeToResume()
+        {
+            btnReset.Text = "RESUME";
+            btnReset.BackColor = Color.Yellow;
+        }
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

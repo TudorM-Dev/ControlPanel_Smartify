@@ -46,12 +46,13 @@
             this.btnAuto = new FontAwesome.Sharp.IconButton();
             this.btnOpenS = new FontAwesome.Sharp.IconButton();
             this.btnSendData = new FontAwesome.Sharp.IconButton();
-            this.btnStop = new FontAwesome.Sharp.IconButton();
+            this.btnReset = new FontAwesome.Sharp.IconButton();
             this.btnConnect = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.labelSpeech = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -336,7 +337,7 @@
             // 
             // btnAuto
             // 
-            this.btnAuto.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnAuto.BackColor = System.Drawing.Color.Cyan;
             this.btnAuto.FlatAppearance.BorderSize = 0;
             this.btnAuto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAuto.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -347,7 +348,7 @@
             this.btnAuto.Name = "btnAuto";
             this.btnAuto.Size = new System.Drawing.Size(319, 40);
             this.btnAuto.TabIndex = 26;
-            this.btnAuto.Text = "MANUAL";
+            this.btnAuto.Text = "AUTO";
             this.btnAuto.UseVisualStyleBackColor = false;
             this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
             this.btnAuto.MouseEnter += new System.EventHandler(this.btnAuto_MouseEnter);
@@ -388,24 +389,25 @@
             this.btnSendData.UseVisualStyleBackColor = false;
             this.btnSendData.Click += new System.EventHandler(this.btnSendData_Click);
             // 
-            // btnStop
+            // btnReset
             // 
-            this.btnStop.BackColor = System.Drawing.Color.Firebrick;
-            this.btnStop.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.btnStop.FlatAppearance.BorderSize = 0;
-            this.btnStop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStop.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStop.ForeColor = System.Drawing.Color.White;
-            this.btnStop.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnStop.IconColor = System.Drawing.Color.Empty;
-            this.btnStop.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnStop.Location = new System.Drawing.Point(327, 642);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(117, 53);
-            this.btnStop.TabIndex = 21;
-            this.btnStop.Text = "STOP";
-            this.btnStop.UseVisualStyleBackColor = false;
+            this.btnReset.BackColor = System.Drawing.Color.Firebrick;
+            this.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnReset.IconColor = System.Drawing.Color.Empty;
+            this.btnReset.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnReset.Location = new System.Drawing.Point(327, 642);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(117, 53);
+            this.btnReset.TabIndex = 21;
+            this.btnReset.Text = "RESET";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnConnect
             // 
@@ -425,6 +427,7 @@
             this.btnConnect.TabIndex = 20;
             this.btnConnect.Text = "CONNECT";
             this.btnConnect.UseVisualStyleBackColor = false;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // iconButton1
             // 
@@ -502,12 +505,23 @@
             this.iconButton4.Text = "RUN  PROGRAM";
             this.iconButton4.UseVisualStyleBackColor = false;
             // 
+            // labelSpeech
+            // 
+            this.labelSpeech.AutoSize = true;
+            this.labelSpeech.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSpeech.Location = new System.Drawing.Point(78, 856);
+            this.labelSpeech.Name = "labelSpeech";
+            this.labelSpeech.Size = new System.Drawing.Size(70, 25);
+            this.labelSpeech.TabIndex = 31;
+            this.labelSpeech.Text = "label2";
+            // 
             // FormController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.ClientSize = new System.Drawing.Size(1367, 821);
+            this.ClientSize = new System.Drawing.Size(1367, 899);
+            this.Controls.Add(this.labelSpeech);
             this.Controls.Add(this.iconButton4);
             this.Controls.Add(this.iconButton3);
             this.Controls.Add(this.iconButton2);
@@ -517,7 +531,7 @@
             this.Controls.Add(this.btnSendData);
             this.Controls.Add(this.textBoxPort);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnStop);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -552,7 +566,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private FontAwesome.Sharp.IconButton btnConnect;
-        private FontAwesome.Sharp.IconButton btnStop;
+        private FontAwesome.Sharp.IconButton btnReset;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxPort;
         private FontAwesome.Sharp.IconButton btnSendData;
@@ -562,5 +576,6 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton4;
+        private System.Windows.Forms.Label labelSpeech;
     }
 }
