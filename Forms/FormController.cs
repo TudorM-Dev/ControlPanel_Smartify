@@ -58,13 +58,9 @@ namespace SortifyBot_UI.Forms
                     if (result == "Wake up")
                     {
                         result = "Hi, how can I help you";
+                        changeToManual();
 
                     }
-                    else if (result == "Turn around")
-                    {
-                        result = "Turning around right now";
-                    }
-
                     speech.SpeakAsync(result);
                     labelSpeech.Text = result;
 
